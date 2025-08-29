@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT PLANNING AND MANAGEMENT</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#event-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#event-table th, #event-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#event-table th {
+    background-color: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+    <header>
+    <h1>EVENT PLANING AND MANAGEMENT</h1>
+    <nav>
+         <ul>                        
+            <li><a href="#create-event">Create Event</a></li>                                     
+         </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul id="event-list">
+                <!-- Event list will be populated dynamically -->
+            </ul>
+        </section>
+        <section id="create-event">
+            <h2>Create Event</h2>
+            <form id="create-event-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name"><br><br>
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date"><br><br>
+                <label for="event-time">Event Time:</label>
+                <input type="time" id="event-time" name="event-time"><br><br>
+                <input type="submit" value="Create Event">
+            </form>
+        </section>
+        <section id="manage-events">
+            <h2>Manage Events</h2>
+            <table id="event-table">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Event Date</th>
+                        <th>Event Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
